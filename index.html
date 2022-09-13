@@ -20,7 +20,9 @@
     <title>Nimas & Zul</title>
   </head>
   <body>
-    <audio autoplay loop src="/music/love.mp3"></audio>
+    <!-- <audio id="myAudio" controls autoplay>
+      <source src="music/love.mp3" type="audio/mpeg" />
+    </audio> -->
     <header>
       <nav>
         <div class="center-name">
@@ -66,5 +68,12 @@
         </div>
       </div>
     </section>
+    <script>
+      async function start() {
+        play();
+      }
+
+      start();
+    </script>
   </body>
 </html>

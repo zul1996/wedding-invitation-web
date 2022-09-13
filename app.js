@@ -3,6 +3,8 @@ window.onload = function () {
     const hours = document.querySelectorAll('hours');
     const minutes = document.querySelectorAll('minutes');
     const seconds = document.querySelectorAll('seconds');
+    // var x = document.getElementById("myAudio");
+
 
 
 }
@@ -33,21 +35,18 @@ function updateCountdowntime() {
 
 setInterval(updateCountdowntime, 1000);
 
-// function play() {
-//     var audio = new Audio(
-//         "https://www.bensound.com/bensound-music/bensound-moose.mp3"
-//     );
-//     audio.play();
-//     audio.loop = true;
-//     audio.addEventListener(
-//         "ended",
-//         function () {
-//             this.currentTime = 0;
-//             this.play();
-//         },
-//         true
-//     );
-// }
-// play();
-
-
+function play() {
+    var audio = new Audio(
+        "https://www.bensound.com/bensound-music/bensound-love.mp3"
+    );
+    audio.play();
+    audio.loop = true;
+    audio.addEventListener(
+        "ended",
+        function () {
+            this.currentTime = 1;
+            this.play();
+        },
+        false
+    );
+}
