@@ -3,7 +3,7 @@ window.onload = function () {
     const hours = document.querySelectorAll('hours');
     const minutes = document.querySelectorAll('minutes');
     const seconds = document.querySelectorAll('seconds');
-    // var x = document.getElementById("myAudio");
+    // document.getElementById("autoplay").play();
 
 
 
@@ -35,18 +35,35 @@ function updateCountdowntime() {
 
 setInterval(updateCountdowntime, 1000);
 
-function play() {
-    var audio = new Audio(
-        "https://www.bensound.com/bensound-music/bensound-love.mp3"
-    );
-    audio.play();
-    audio.loop = true;
-    audio.addEventListener(
-        "ended",
-        function () {
-            this.currentTime = 1;
-            this.play();
-        },
-        false
-    );
-}
+// function play() {
+//     var audio = new Audio(
+//         "https://www.bensound.com/bensound-music/bensound-love.mp3"
+//     );
+//     audio.play();
+//     audio.loop = true;
+//     audio.addEventListener(
+//         "ended",
+//         function () {
+//             this.currentTime = 1;
+//             this.play();
+//         },
+//         false
+//     );
+// }
+
+// async function start() {
+//     play();
+// }
+
+// start();
+
+// var promise = play();
+
+// if (promise !== undefined) {
+//     promise.then(_ => {
+//         // Autoplay started!
+//     }).catch(error => {
+//         // Autoplay was prevented.
+//         // Show a "Play" button so that user can start playback.
+//     });
+// }

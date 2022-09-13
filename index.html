@@ -20,8 +20,14 @@
     <title>Nimas & Zul</title>
   </head>
   <body>
-    <!-- <audio id="myAudio" controls autoplay>
-      <source src="music/love.mp3" type="audio/mpeg" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var audio = new Audio("/music/kiminonawa.mp3");
+        audio.play();
+      });
+    </script>
+    <!-- <audio loop muted id="autoplay">
+      <source src="love.mp3" type="audio/mp3" />
     </audio> -->
     <header>
       <nav>
@@ -68,12 +74,5 @@
         </div>
       </div>
     </section>
-    <script>
-      async function start() {
-        play();
-      }
-
-      start();
-    </script>
   </body>
 </html>
