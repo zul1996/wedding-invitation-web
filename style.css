@@ -60,6 +60,18 @@ nav .center-name {
   align-items: center;
 }
 
+.date-place {
+  display: flex;
+  gap: 50px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.date-place img {
+  margin-top: -20px;
+  width: 100px;
+}
+
 .container-time {
   display: flex;
   flex-direction: column;
@@ -154,6 +166,19 @@ nav .center-name {
 
   .center-name h2 {
     font-size: 18px;
+  }
+
+  .date-place {
+    display: flex;
+    gap: 40px;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .date-place img {
+    margin: 0;
+    margin-left: -30px;
+    width: 50px;
   }
   /* CSS */
 }
