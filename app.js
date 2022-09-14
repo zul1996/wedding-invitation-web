@@ -4,16 +4,13 @@ window.onload = function () {
     const minutes = document.querySelectorAll('minutes');
     const seconds = document.querySelectorAll('seconds');
     // document.getElementById("autoplay").play();
-
-
-
 }
 
 
 
 const currentWedding = new Date().getFullYear();
 
-const OurWedding = new Date(`September 18 ${currentWedding} 00:00:00`);
+const OurWedding = new Date(`Januari 13 ${currentWedding + 1} 00:00:00`);
 
 // Update Countdowntime
 function updateCountdowntime() {
